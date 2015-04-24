@@ -1,0 +1,275 @@
+
+
+" 查看当日" = "전망";
+
+/* No comment provided by engineer. */
+"%.2f小时" = "%.2f시간";
+
+/* No comment provided by engineer. */
+"%@" = "%@";
+
+/* No comment provided by engineer. */
+"Attention" = "주의";
+
+/* No comment provided by engineer. */
+"This tag is already exist!" = "라벨 이미 존재합니다.";
+
+/* No comment provided by engineer. */
+"不积跬步无以至千里，不积小流无以成江海。有序生活从点滴做起。" =
+"한 걸음 한 걸음씩 더해지지 않으면, 천리에 이를 수가 없다. 사소한 것부터 양호한 생활 습관을 기릅나다.";
+
+/* No comment provided by engineer. */
+"两次输入密码不一致！" = "가입 방지 문자가 일치 하지 않습니다.";
+
+/* No comment provided by engineer. */
+"主题" = "주제";
+
+/* No comment provided by engineer. */
+"从相册选择" = "앨범에서 고릅니다.";
+
+/* No comment provided by engineer. */
+"任意选取时段，绘制生活状态图" = "시간배분 도표를 작동적으로 그릴 수 있습니다.";
+
+/* No comment provided by engineer. */
+"保存事项" = "저장된 사항";
+
+/* No comment provided by engineer. */
+"修改密码" = "암호 변경";
+
+/* No comment provided by engineer. */
+"元" = "원";
+
+/* No comment provided by engineer. */
+"关于我们" = "우리에 대해서";
+
+/* No comment provided by engineer. */
+"关键字" = "키워드";
+
+/* No comment provided by engineer. */
+"再次输入:" = "다시 입력:";
+
+/* No comment provided by engineer. */
+"出错啦！" = "고장납니다.";
+
+/* No comment provided by engineer. */
+"删除事项" = "삭제된 사항";
+
+/* No comment provided by engineer. */
+"到" = "까지";
+
+/* No comment provided by engineer. */
+"取消" = "취소하다";
+
+/* No comment provided by engineer. */
+"声音、加密、教程及反馈" = "소리, 기밀문서, 교본과 픠드백";
+
+/* No comment provided by engineer. */
+"多角度精准定位每条记录" = "정확적으로 기록의 위치를 측정합니다.";
+
+/* No comment provided by engineer. */
+"天后" = "후에";
+
+/* No comment provided by engineer. */
+"密码不能为空！" = "암호를 입력해줍니다.";
+
+/* No comment provided by engineer. */
+"密码提示:" = "비밀번호 힌트:";
+
+/* No comment provided by engineer. */
+"密码错误" = "틀린 암호";
+
+/* No comment provided by engineer. */
+"工作" = "일";
+
+/* No comment provided by engineer. */
+"已设提醒:%@  %@" = "알람 설치: %@  %@";
+
+/* No comment provided by engineer. */
+"心情" = "기분";
+
+/* No comment provided by engineer. */
+"团队作品" = "의견 픠드백";
+
+/* No comment provided by engineer. */
+"成功删除该事项" = "사항이 삭제되었습니다.";
+
+/* No comment provided by engineer. */
+"成功添加至收藏夹" = "즐겨찾기 추가됨";
+
+/* No comment provided by engineer. */
+"成长" = "성장";
+
+/* No comment provided by engineer. */
+"打开" = "열림";
+
+/* No comment provided by engineer. */
+"拍照" = "사진 찍기";
+
+/* No comment provided by engineer. */
+"按日期" = "날짜로";
+
+/* No comment provided by engineer. */
+"按日期设置" = "날짜로 설치";
+
+/* No comment provided by engineer. */
+"按标签" = "라벨로";
+
+/* No comment provided by engineer. */
+"按钮释义" = "버튼 설명";
+
+/* No comment provided by engineer. */
+"按间隔设置" = "간격으로 설치";
+
+/* No comment provided by engineer. */
+"掌控自我，一切从今天开始" = "자신을 이기고 오늘부터 모든 것은 시작됩니다.";
+
+/* No comment provided by engineer. */
+"提示" = "힌트";
+
+/* No comment provided by engineer. */
+"提示      " = "힌트      ";
+
+/* No comment provided by engineer. */
+"支出" = "지출";
+
+/* No comment provided by engineer. */
+"收入" = "수입";
+
+/* No comment provided by engineer. */
+"收录重点事项，支持加密功能" = "중점사항을 수록하고 암호설정이 가능합니다.";
+
+/* No comment provided by engineer. */
+"收支管理" = "수입지출관리";
+
+/* No comment provided by engineer. */
+"收藏事项" = "즐겨찾기 사항";
+
+/* No comment provided by engineer. */
+"收藏夹" = "즐겨 찾기";
+
+/* No comment provided by engineer. */
+"收藏夹中已收录此事" = "즐겨찾기에 이사항이 추가되었습니다.";
+
+/* No comment provided by engineer. */
+"收藏夹密码" = "즐겨찾기 암호";
+
+/* No comment provided by engineer. */
+"无主题" = "주제가 없습니다.";
+
+/* No comment provided by engineer. */
+"本次编辑内容尚未保存，确定离开吗" = "내용을 저장할 까요?";
+
+/* No comment provided by engineer. */
+"查看照片" = "사진보기";
+
+/* No comment provided by engineer. */
+"查看结果" = "결과보기";
+
+/* No comment provided by engineer. */
+"添加事项" = "사항을 추가합니다.";
+
+/* No comment provided by engineer. */
+"添加标签" = "라벨을 추가합니다.";
+
+/* No comment provided by engineer. */
+"温馨提示" = "도움말";
+
+/* No comment provided by engineer. */
+"点击输入......" = "클릭입력......";
+
+/* No comment provided by engineer. */
+"照片数量达到上限！" = "사진수량이 제한에 이릅니다.";
+
+/* No comment provided by engineer. */
+"照片浏览" = "검색";
+
+/* No comment provided by engineer. */
+"版本" = "판본";
+
+/* No comment provided by engineer. */
+"生活" = "생활";
+
+/* No comment provided by engineer. */
+"确定" = "확인";
+
+/* No comment provided by engineer. */
+"确定删除该事项吗" = "사항 삭제";
+
+/* No comment provided by engineer. */
+"空" = "없다";
+
+/* No comment provided by engineer. */
+"结束应该在开始之后哦" = "끝난 날은 시작한 날 되에 입니다.";
+
+/* No comment provided by engineer. */
+"结束时间应该比开始时间更大哦！" = "끝나는 시간이 시작한 시간보다 더 큽니다.";
+
+/* No comment provided by engineer. */
+"统 计" = "통계";
+
+/* No comment provided by engineer. */
+"继续努力" = "반환";
+
+/* No comment provided by engineer. */
+"设 置" = "설정";
+
+/* No comment provided by engineer. */
+"统计起始日期大于终止日期" = "끝난 날은 시작한 날 되에 입니다.";
+
+/* No comment provided by engineer. */
+"设定提醒" = "알람 설치";
+
+/* No comment provided by engineer. */
+"设置密码:" = "비밀번호 설치:";
+
+/* No comment provided by engineer. */
+"该事件尚未保存，无须删除" = "보존하지 않는 사항이 삭제할 필요가 없습니다.";
+
+/* No comment provided by engineer. */
+"该事项已自动保存并存入收藏夹" = "이 상항은 작동적으로 즐겨찾기에 가입됐습니다.";
+
+/* No comment provided by engineer. */
+"该时段已有事件存在，请修改起止时间或选择相应事件进行补充" = "이 기간 이미 상항이 존재됩니다. 시작 시간을 바꾸나 사항을 보완합니다.";
+
+/* No comment provided by engineer. */
+"该阶段共有记录           天" = "     전부           일";
+
+/* No comment provided by engineer. */
+"请先选择要查看的日期" = "날짜를 선택합니다.";
+
+/* No comment provided by engineer. */
+"请输入事件起始和结束时间" = "시작 시간과 마감 시관을 입력해줍니다.";
+
+/* No comment provided by engineer. */
+"请输入原密码" = "원래 암호를 입력해줍니다.";
+
+/* No comment provided by engineer. */
+"请输入密码" = "암호를 입력해줍니다.";
+
+/* No comment provided by engineer. */
+"请输入收藏夹密码" = "즐겨찾기 비밀번호를 입력해줍니다.";
+
+/* No comment provided by engineer. */
+"请输入标签" = "라벨에 입력해줍니다.";
+
+/* No comment provided by engineer. */
+"请输入：" = "입렵해주니다：";
+
+/* No comment provided by engineer. */
+"请选择" = "선택해줍니다.";
+
+/* No comment provided by engineer. */
+"返回" = "돌아가기";
+
+/* No comment provided by engineer. */
+"重选标签" = "꼬리표";
+
+/* No comment provided by engineer. */
+"附加照片" = "사진 추가";
+
+/* No comment provided by engineer. */
+"音效" = "사운드";
+
+
+
+

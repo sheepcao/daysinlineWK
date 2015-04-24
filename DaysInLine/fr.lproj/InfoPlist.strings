@@ -1,0 +1,274 @@
+/* Localized versions of Info.plist keys */
+CFBundleDisplayName="DaysInLine";
+/* No comment provided by engineer. */
+" 查看当日" = " View";
+
+/* No comment provided by engineer. */
+"%.2f小时" = "%.2fHours";
+
+/* No comment provided by engineer. */
+"%@" = "%@";
+
+/* No comment provided by engineer. */
+"Attention" = "Attention";
+
+/* No comment provided by engineer. */
+"This tag already exists!" = "This tag already exists!";
+
+/* No comment provided by engineer. */
+"不积跬步无以至千里，不积小流无以成江海。有序生活从点滴做起。" = " A journey of a thousand miles starts with a single step. Get started with DaysInLine.";
+
+/* No comment provided by engineer. */
+"两次输入密码不一致！" = " The two passwords you typed do not match！";
+
+/* No comment provided by engineer. */
+"主题" = "Theme";
+
+/* No comment provided by engineer. */
+"从相册选择" = "Album ";
+
+/* No comment provided by engineer. */
+"任意选取时段，绘制生活状态图" = "Set specific time period, get the diagram of your life.";
+
+/* No comment provided by engineer. */
+"保存事项" = "Save item";
+
+/* No comment provided by engineer. */
+"修改密码" = "Change";
+
+/* No comment provided by engineer. */
+"元" = " ";
+
+/* No comment provided by engineer. */
+"关于我们" = "About us";
+
+/* No comment provided by engineer. */
+"关键字" = "Keyword";
+
+/* No comment provided by engineer. */
+"再次输入:" = "Type again:";
+
+/* No comment provided by engineer. */
+"出错啦！" = "Error！";
+
+/* No comment provided by engineer. */
+"删除事项" = "Delete";
+
+/* No comment provided by engineer. */
+"到" = "to";
+
+/* No comment provided by engineer. */
+"取消" = "Cancel";
+
+/* No comment provided by engineer. */
+"声音、加密、教程及反馈" = "Sound, privacy, manual & feedback.";
+
+/* No comment provided by engineer. */
+"多角度精准定位每条记录" = "Pinpoint each item by various methods.";
+
+/* No comment provided by engineer. */
+"天后" = "days later";
+
+/* No comment provided by engineer. */
+"密码不能为空！" = "Password can't be empty！";
+
+/* No comment provided by engineer. */
+"密码提示:" = "Password hint:";
+
+/* No comment provided by engineer. */
+"密码错误" = "Incorrect password";
+
+/* No comment provided by engineer. */
+"工作" = "Work";
+
+/* No comment provided by engineer. */
+"已设提醒:%@  %@" = "Remind Time:%1$@  %2$@";
+
+/* No comment provided by engineer. */
+"心情" = "Mood";
+
+/* No comment provided by engineer. */
+"意见反馈" = "Suggestions & Feedback";
+
+/* No comment provided by engineer. */
+"成功删除该事项" = "Delete successfully.";
+
+/* No comment provided by engineer. */
+"成功添加至收藏夹" = "Added successfully.";
+
+/* No comment provided by engineer. */
+"收藏夹" = "Favorite";
+
+/* No comment provided by engineer. */
+"成长" = "Progress";
+
+/* No comment provided by engineer. */
+"打开" = "Open";
+
+/* No comment provided by engineer. */
+"拍照" = "Take photo";
+
+/* No comment provided by engineer. */
+"按日期" = "Date";
+
+/* No comment provided by engineer. */
+"按日期设置" = "Date";
+
+/* No comment provided by engineer. */
+"按标签" = "Tag";
+
+/* No comment provided by engineer. */
+"按钮释义" = "Function of buttons";
+
+/* No comment provided by engineer. */
+"按间隔设置" = "Interval";
+
+/* No comment provided by engineer. */
+"掌控自我，一切从今天开始" = "Become the master of your life from now on.";
+
+/* No comment provided by engineer. */
+"提示" = "Reminder";
+
+/* No comment provided by engineer. */
+"提示      " = "Hint   ";
+
+/* No comment provided by engineer. */
+"支出" = "Expense";
+
+/* No comment provided by engineer. */
+"收入" = "Income";
+
+/* No comment provided by engineer. */
+"收录重点事项，支持加密功能" = "Preserve important items. Password protection is available.";
+
+/* No comment provided by engineer. */
+"收支管理" = "Finance";
+
+/* No comment provided by engineer. */
+"收藏事项" = "Preserve";
+
+/* No comment provided by engineer. */
+"收藏夹中已收录此事" = "Already preserved in the favorite.";
+
+/* No comment provided by engineer. */
+"收藏夹密码" = "Password";
+
+/* No comment provided by engineer. */
+"无主题" = " No theme";
+
+/* No comment provided by engineer. */
+"本次编辑内容尚未保存，确定离开吗" = "New entries have NOT been saved. Are you sure to leave this page?";
+
+/* No comment provided by engineer. */
+"查看照片" = "View";
+
+
+/* No comment provided by engineer. */
+"查看结果" = "Result";
+
+/* No comment provided by engineer. */
+"添加事项" = "new item";
+
+/* No comment provided by engineer. */
+"添加标签" = "Add tag";
+
+/* No comment provided by engineer. */
+"温馨提示" = "reminder";
+
+/* No comment provided by engineer. */
+"点击输入......" = "click & type......";
+
+/* No comment provided by engineer. */
+"照片数量达到上限！" = "The number of photos has reached the upper limit！";
+
+/* No comment provided by engineer. */
+"照片浏览" = "View Photos";
+
+/* No comment provided by engineer. */
+"版本" = "Version";
+
+/* No comment provided by engineer. */
+"生活" = "Life";
+
+/* No comment provided by engineer. */
+"确定" = "OK";
+
+/* No comment provided by engineer. */
+"确定删除该事项吗" = "Are you sure to delete?";
+
+/* No comment provided by engineer. */
+"空" = "Empty";
+
+/* No comment provided by engineer. */
+"结束应该在开始之后哦" = "The end time should be later than the start time.";
+
+/* No comment provided by engineer. */
+"结束时间应该比开始时间更大哦！" = " The end time should be later than the start time！";
+
+/* No comment provided by engineer. */
+"统 计" = "Statistics";
+
+/* No comment provided by engineer. */
+"统计起始日期大于终止日期" = " Error! The end date should be later than the start date ";
+
+/* No comment provided by engineer. */
+"继续努力" = "Keep Moving";
+
+/* No comment provided by engineer. */
+"设 置" = "Setting";
+
+/* No comment provided by engineer. */
+"设定提醒" = "reminders";
+
+/* No comment provided by engineer. */
+"设置密码:" = "Set password:";
+
+/* No comment provided by engineer. */
+"该事件尚未保存，无须删除" = "This item hasn't been saved. No need to delete it.";
+
+/* No comment provided by engineer. */
+"该事项已自动保存并存入收藏夹" = "Has been preserved in the favorite.";
+
+/* No comment provided by engineer. */
+"该时段已有事件存在，请修改起止时间或选择相应事件进行补充" = "There's already an event recorded in this period of time. Please change the start time or modify a current item.";
+
+/* No comment provided by engineer. */
+"该阶段共有记录           天" = "              Totals:           days";
+
+/* No comment provided by engineer. */
+"请先选择要查看的日期" = "Please select a date first.";
+
+/* No comment provided by engineer. */
+"请输入事件起始和结束时间" = "Please enter the start and end time.";
+
+/* No comment provided by engineer. */
+"请输入原密码" = "Please enter the original password.";
+
+/* No comment provided by engineer. */
+"请输入密码" = "Please enter your new password.";
+
+/* No comment provided by engineer. */
+"请输入收藏夹密码" = "Please enter your password for the favorite.";
+
+/* No comment provided by engineer. */
+"请输入标签" = "Please enter a tag";
+
+/* No comment provided by engineer. */
+"请输入：" = "Please enter：";
+
+/* No comment provided by engineer. */
+"请选择" = "Please choose";
+
+/* No comment provided by engineer. */
+"返回" = "Return";
+
+/* No comment provided by engineer. */
+"重选标签" = "Return";
+
+/* No comment provided by engineer. */
+"附加照片" = "photos";
+
+/* No comment provided by engineer. */
+"音效" = "Sound";
+
+

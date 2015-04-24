@@ -1,0 +1,18 @@
+
+/* Class = "WKInterfaceButton"; title = "  数据统计"; ObjectID = "470-SC-zZY"; */
+"470-SC-zZY.title" = "  数据统计";
+
+/* Class = "WKInterfaceController"; title = "月份"; ObjectID = "8Ty-YU-8Cc"; */
+"8Ty-YU-8Cc.title" = "月份";
+
+/* Class = "WKInterfaceController"; title = "日线图"; ObjectID = "ATt-Kl-xxQ"; */
+"ATt-Kl-xxQ.title" = "日线图";
+
+/* Class = "WKInterfaceButton"; title = "  查看日线"; ObjectID = "KdD-IE-kcX"; */
+"KdD-IE-kcX.title" = "  查看日线";
+
+/* Class = "WKInterfaceLabel"; text = "1月"; ObjectID = "oPp-g0-4DJ"; */
+"oPp-g0-4DJ.text" = "1月";
+
+/* Class = "WKInterfaceLabel"; text = "Label"; ObjectID = "qSU-8K-K4n"; */
+"qSU-8K-K4n.text" = "Label";
