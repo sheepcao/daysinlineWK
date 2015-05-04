@@ -22,13 +22,14 @@
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
 
-    [self initDB];  
     // Configure interface objects here.
 }
 
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     [super willActivate];
+    [self initDB];
+
 }
 
 - (void)didDeactivate {

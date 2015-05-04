@@ -170,7 +170,7 @@
         
         [self addSubview:growImage];
         
-        UIImageView *incomeImage = [[UIImageView alloc] initWithFrame:CGRectMake(30,y +290, 260    , 30)];
+        UIImageView *incomeImage = [[UIImageView alloc] initWithFrame:CGRectMake(30,y +290, 260, 30)];
         [incomeImage setImage:[UIImage imageNamed:@"收入.png"]];
         
         self.incomingLong = [[UILabel alloc] init];

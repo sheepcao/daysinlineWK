@@ -10,14 +10,14 @@
 	<string>DaysInLine</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>E2805F02C24CDC68DC58A1D4E5C1D8AD994917E0</key>
+		<key>693ED2B8A1F3CD8C22D4373ADEBB8A2152E5BC96</key>
 		<string>https://github.com/sheepcao/daysinlineOnWatch.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>DaysInLine.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>E2805F02C24CDC68DC58A1D4E5C1D8AD994917E0</key>
+		<key>693ED2B8A1F3CD8C22D4373ADEBB8A2152E5BC96</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>E2805F02C24CDC68DC58A1D4E5C1D8AD994917E0</string>
+	<string>693ED2B8A1F3CD8C22D4373ADEBB8A2152E5BC96</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>E2805F02C24CDC68DC58A1D4E5C1D8AD994917E0</string>
+			<string>693ED2B8A1F3CD8C22D4373ADEBB8A2152E5BC96</string>
 			<key>IDESourceControlWCCName</key>
 			<string>daysinline_Watch-master</string>
 		</dict>
