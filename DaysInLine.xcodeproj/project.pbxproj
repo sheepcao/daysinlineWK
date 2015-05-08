@@ -180,7 +180,7 @@
 		0BFD27ED18BCE5C60016BCE4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD27EC18BCE5C60016BCE4 /* CoreLocation.framework */; };
 		0BFD27EF18BCE5E50016BCE4 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD27EE18BCE5E50016BCE4 /* libstdc++.dylib */; };
 		0BFD27F118BCE5F10016BCE4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFD27F018BCE5F10016BCE4 /* libz.dylib */; };
-		0BFE899F18C30FC0002F6F67 /* backgroundHome586@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFE899E18C30FC0002F6F67 /* backgroundHome586@2x.png */; };
+		0BFE899F18C30FC0002F6F67 /* backgroundHome586.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFE899E18C30FC0002F6F67 /* backgroundHome586.png */; };
 		0BFF71E018C7697F0011AFDE /* editView@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFF71DF18C7697F0011AFDE /* editView@2x.png */; };
 		0BFF71E218C76AAB0011AFDE /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BFF71E118C76AAB0011AFDE /* iAd.framework */; };
 		0BFF71E818C76D130011AFDE /* editView586@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFF71E718C76D130011AFDE /* editView586@2x.png */; };
@@ -237,28 +237,28 @@
 		A47EF56F1AE6255A005C32E0 /* ShareSDKFlatShareViewUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A47EF55C1AE62559005C32E0 /* ShareSDKFlatShareViewUI.framework */; };
 		A47EF5701AE6255A005C32E0 /* ShareSDKShareActionSheet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A47EF55D1AE62559005C32E0 /* ShareSDKShareActionSheet.framework */; };
 		A49116E91AEF10C80050A6DA /* backgroundHome@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B93EC5918ABD06A00F871C4 /* backgroundHome@2x.png */; };
-		A49116EA1AEF10D20050A6DA /* backgroundHome586@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFE899E18C30FC0002F6F67 /* backgroundHome586@2x.png */; };
+		A49116EA1AEF10D20050A6DA /* backgroundHome586.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFE899E18C30FC0002F6F67 /* backgroundHome586.png */; };
 		A49116EB1AEF14F50050A6DA /* text.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B1F192E18D49529000F94E5 /* text.png */; };
 		A49116EC1AEF14F80050A6DA /* backgroundHome@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B93EC5918ABD06A00F871C4 /* backgroundHome@2x.png */; };
 		A49116ED1AEF14FB0050A6DA /* backgroundHome.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BD7008218139338004FCBE2 /* backgroundHome.png */; };
-		A49116EE1AEF15030050A6DA /* backgroundHome586@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFE899E18C30FC0002F6F67 /* backgroundHome586@2x.png */; };
+		A49116EE1AEF15030050A6DA /* backgroundHome586.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BFE899E18C30FC0002F6F67 /* backgroundHome586.png */; };
 		A49116EF1AEF173C0050A6DA /* timeBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B1F193318D49633000F94E5 /* timeBtn.png */; };
 		A49116F01AEF173D0050A6DA /* timeBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B1F193318D49633000F94E5 /* timeBtn.png */; };
-		A49116F21AEF18350050A6DA /* rowBack.png in Resources */ = {isa = PBXBuildFile; fileRef = A49116F11AEF18350050A6DA /* rowBack.png */; };
-		A49116F31AEF18350050A6DA /* rowBack.png in Resources */ = {isa = PBXBuildFile; fileRef = A49116F11AEF18350050A6DA /* rowBack.png */; };
 		A4B6A4A01A230188000A3190 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B6A49D1A230188000A3190 /* play.png */; };
 		A4B6A4A11A230188000A3190 /* record.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B6A49E1A230188000A3190 /* record.png */; };
 		A4B6A4A21A230188000A3190 /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B6A49F1A230188000A3190 /* stop.png */; };
-		A4BBBF411AF0647000706D2E /* backgroundWatch.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BBBF401AF0647000706D2E /* backgroundWatch.png */; };
-		A4BBBF421AF0647000706D2E /* backgroundWatch.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BBBF401AF0647000706D2E /* backgroundWatch.png */; };
-		A4BBBF441AF065FC00706D2E /* textWatch.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BBBF431AF065FC00706D2E /* textWatch.png */; };
-		A4BBBF451AF065FC00706D2E /* textWatch.png in Resources */ = {isa = PBXBuildFile; fileRef = A4BBBF431AF065FC00706D2E /* textWatch.png */; };
 		A4BBBF461AF0691E00706D2E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A465D2271ADF7E8C002CE071 /* Images.xcassets */; };
 		A4C856E81AE639E8005208F0 /* statsInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4C856E71AE639E8005208F0 /* statsInterfaceController.m */; };
 		A4C856E91AE63B42005208F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B9A53D71812274D0085FFD7 /* InfoPlist.strings */; };
 		A4C856F61AE65595005208F0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0B9A53D71812274D0085FFD7 /* InfoPlist.strings */; };
 		A4C856FB1AE65687005208F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4C856FE1AE65687005208F0 /* Localizable.strings */; };
 		A4C856FC1AE65687005208F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4C856FE1AE65687005208F0 /* Localizable.strings */; };
+		A4CB4FC51AFC45C20006FFF4 /* DaysInLine WatchKit Extension.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = A465D2581ADFAE67002CE071 /* DaysInLine WatchKit Extension.entitlements */; };
+		A4CB4FC61AFC45D30006FFF4 /* DaysInLine.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 0BFF71CE18C71F190011AFDE /* DaysInLine.entitlements */; };
+		A4CB4FC71AFC45D30006FFF4 /* DaysInLine.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 0BFF71CE18C71F190011AFDE /* DaysInLine.entitlements */; };
+		A4CB4FC81AFC45D50006FFF4 /* DaysInLine.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 0BFF71CE18C71F190011AFDE /* DaysInLine.entitlements */; };
+		A4CB4FC91AFC45E00006FFF4 /* DaysInLine WatchKit Extension.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = A465D2581ADFAE67002CE071 /* DaysInLine WatchKit Extension.entitlements */; };
+		A4CB4FCA1AFC45E10006FFF4 /* DaysInLine WatchKit Extension.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = A465D2581ADFAE67002CE071 /* DaysInLine WatchKit Extension.entitlements */; };
 		A4CF989F1AE4D37C00B599DC /* dayLineInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CF989E1AE4D37C00B599DC /* dayLineInterfaceController.m */; };
 		A4FFCDE41A173CBA00B16AE3 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FFCDE31A173CBA00B16AE3 /* EventKit.framework */; };
 		A4FFCDE61A173CBF00B16AE3 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FFCDE51A173CBF00B16AE3 /* EventKitUI.framework */; };
@@ -518,7 +518,7 @@
 		0BFD27EC18BCE5C60016BCE4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0BFD27EE18BCE5E50016BCE4 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		0BFD27F018BCE5F10016BCE4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		0BFE899E18C30FC0002F6F67 /* backgroundHome586@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backgroundHome586@2x.png"; sourceTree = "<group>"; };
+		0BFE899E18C30FC0002F6F67 /* backgroundHome586.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundHome586.png; sourceTree = "<group>"; };
 		0BFF71CE18C71F190011AFDE /* DaysInLine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DaysInLine.entitlements; sourceTree = "<group>"; };
 		0BFF71DF18C7697F0011AFDE /* editView@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "editView@2x.png"; sourceTree = "<group>"; };
 		0BFF71E118C76AAB0011AFDE /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
@@ -589,12 +589,9 @@
 		A47EF55B1AE62559005C32E0 /* ShareSDKFlatShareViewUI.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ShareSDKFlatShareViewUI.bundle; sourceTree = "<group>"; };
 		A47EF55C1AE62559005C32E0 /* ShareSDKFlatShareViewUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKFlatShareViewUI.framework; sourceTree = "<group>"; };
 		A47EF55D1AE62559005C32E0 /* ShareSDKShareActionSheet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShareSDKShareActionSheet.framework; sourceTree = "<group>"; };
-		A49116F11AEF18350050A6DA /* rowBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rowBack.png; sourceTree = "<group>"; };
 		A4B6A49D1A230188000A3190 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = resources/play.png; sourceTree = "<group>"; };
 		A4B6A49E1A230188000A3190 /* record.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = record.png; path = resources/record.png; sourceTree = "<group>"; };
 		A4B6A49F1A230188000A3190 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stop.png; path = resources/stop.png; sourceTree = "<group>"; };
-		A4BBBF401AF0647000706D2E /* backgroundWatch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundWatch.png; sourceTree = "<group>"; };
-		A4BBBF431AF065FC00706D2E /* textWatch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textWatch.png; sourceTree = "<group>"; };
 		A4C856E61AE639E8005208F0 /* statsInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = statsInterfaceController.h; sourceTree = "<group>"; };
 		A4C856E71AE639E8005208F0 /* statsInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = statsInterfaceController.m; sourceTree = "<group>"; };
 		A4C856F71AE655FD005208F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -929,7 +926,7 @@
 				0BA61BEA18A2886B000B7163 /* 按键3-2.png */,
 				0BA61BEE18A28880000B7163 /* 按键4-2.png */,
 				0BA61BF018A28887000B7163 /* 按键5-2.png */,
-				0BFE899E18C30FC0002F6F67 /* backgroundHome586@2x.png */,
+				0BFE899E18C30FC0002F6F67 /* backgroundHome586.png */,
 				0B1F193018D49633000F94E5 /* backBtn.png */,
 				0B1F193218D49633000F94E5 /* passwordback.png */,
 				0B1F193318D49633000F94E5 /* timeBtn.png */,
@@ -1102,9 +1099,6 @@
 		A465D2221ADF7E8C002CE071 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A4BBBF401AF0647000706D2E /* backgroundWatch.png */,
-				A4BBBF431AF065FC00706D2E /* textWatch.png */,
-				A49116F11AEF18350050A6DA /* rowBack.png */,
 				A465D2231ADF7E8C002CE071 /* Info.plist */,
 				A4C856FE1AE65687005208F0 /* Localizable.strings */,
 			);
@@ -1356,7 +1350,7 @@
 			files = (
 				0B1D39AE19851564008196D3 /* weixin.png in Resources */,
 				0BFF71E018C7697F0011AFDE /* editView@2x.png in Resources */,
-				0BFE899F18C30FC0002F6F67 /* backgroundHome586@2x.png in Resources */,
+				0BFE899F18C30FC0002F6F67 /* backgroundHome586.png in Resources */,
 				0BEABAA918D205EA001EE9A5 /* ios6-icon-29.png in Resources */,
 				0B92BE2318B0ADF0003AE50C /* 日期角标.png in Resources */,
 				0BEFA87218D9E97A0016EC80 /* 提醒背景586.png in Resources */,
@@ -1466,6 +1460,7 @@
 				0BA61BE318A2808E000B7163 /* 按键2-2.png in Resources */,
 				0BF9EF7718BB8A6D00F38370 /* check.png in Resources */,
 				0BEABAAB18D205EA001EE9A5 /* ios6-icon-57.png in Resources */,
+				A4CB4FC91AFC45E00006FFF4 /* DaysInLine WatchKit Extension.entitlements in Resources */,
 				0BB08A7F18A9F41D00DE111E /* returnBtn2.png in Resources */,
 				0B3686BC18CCC1350036DCA3 /* passwordBtn.png in Resources */,
 				0BEFA88718D9FB4A0016EC80 /* okSound.wav in Resources */,
@@ -1492,6 +1487,7 @@
 				0BB08A7918A9F41D00DE111E /* saveBtn.png in Resources */,
 				0B92BE3718B0C4F3003AE50C /* cancelInAlert.png in Resources */,
 				0BEFA87B18D9E98A0016EC80 /* 照片背景586.png in Resources */,
+				A4CB4FC71AFC45D30006FFF4 /* DaysInLine.entitlements in Resources */,
 				0B3686BA18CCBC900036DCA3 /* check@2x.png in Resources */,
 				0B9009E01877D791008D3799 /* right_arrow@2x.png in Resources */,
 				0BB08A8018A9F41D00DE111E /* collectionBtn2.png in Resources */,
@@ -1512,15 +1508,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A465D21E1ADF7E8C002CE071 /* DaysInLine WatchKit App.app in Resources */,
-				A49116EE1AEF15030050A6DA /* backgroundHome586@2x.png in Resources */,
+				A49116EE1AEF15030050A6DA /* backgroundHome586.png in Resources */,
 				A49116EB1AEF14F50050A6DA /* text.png in Resources */,
 				A4BBBF461AF0691E00706D2E /* Images.xcassets in Resources */,
 				A4C856FB1AE65687005208F0 /* Localizable.strings in Resources */,
 				A49116EC1AEF14F80050A6DA /* backgroundHome@2x.png in Resources */,
-				A4BBBF411AF0647000706D2E /* backgroundWatch.png in Resources */,
-				A49116F21AEF18350050A6DA /* rowBack.png in Resources */,
 				A49116F01AEF173D0050A6DA /* timeBtn.png in Resources */,
-				A4BBBF441AF065FC00706D2E /* textWatch.png in Resources */,
+				A4CB4FC51AFC45C20006FFF4 /* DaysInLine WatchKit Extension.entitlements in Resources */,
+				A4CB4FC61AFC45D30006FFF4 /* DaysInLine.entitlements in Resources */,
 				A4C856E91AE63B42005208F0 /* InfoPlist.strings in Resources */,
 				A49116ED1AEF14FB0050A6DA /* backgroundHome.png in Resources */,
 				A465D21A1ADF7E8C002CE071 /* Images.xcassets in Resources */,
@@ -1532,15 +1527,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A49116E91AEF10C80050A6DA /* backgroundHome@2x.png in Resources */,
-				A49116EA1AEF10D20050A6DA /* backgroundHome586@2x.png in Resources */,
+				A49116EA1AEF10D20050A6DA /* backgroundHome586.png in Resources */,
 				A465D23A1ADFA1C2002CE071 /* text.png in Resources */,
 				A4C856FC1AE65687005208F0 /* Localizable.strings in Resources */,
 				A465D2331ADF9179002CE071 /* backgroundHome.png in Resources */,
-				A4BBBF421AF0647000706D2E /* backgroundWatch.png in Resources */,
-				A49116F31AEF18350050A6DA /* rowBack.png in Resources */,
 				A49116EF1AEF173C0050A6DA /* timeBtn.png in Resources */,
-				A4BBBF451AF065FC00706D2E /* textWatch.png in Resources */,
+				A4CB4FC81AFC45D50006FFF4 /* DaysInLine.entitlements in Resources */,
 				A465D2261ADF7E8C002CE071 /* Interface.storyboard in Resources */,
+				A4CB4FCA1AFC45E10006FFF4 /* DaysInLine WatchKit Extension.entitlements in Resources */,
 				A465D2281ADF7E8C002CE071 /* Images.xcassets in Resources */,
 				A4C856F61AE65595005208F0 /* InfoPlist.strings in Resources */,
 			);
@@ -1797,8 +1791,8 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = DaysInLine/DaysInLine.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: CAO GUANGXU";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: CAO GUANGXU";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1838,7 +1832,7 @@
 					"-lstdc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "c3ebc31f-25b5-4e5d-82b0-ac272e65e7c8";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
@@ -1887,7 +1881,7 @@
 					"-lstdc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "c3ebc31f-25b5-4e5d-82b0-ac272e65e7c8";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 				WRAPPER_EXTENSION = app;
@@ -1940,8 +1934,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_ENTITLEMENTS = "DaysInLine WatchKit Extension/DaysInLine WatchKit Extension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: CAO GUANGXU (JTX9TS223Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: CAO GUANGXU (JTX9TS223Q)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1956,7 +1950,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "3b6f8fcc-66a4-4193-bd3e-7b340341f5be";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -1979,7 +1973,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "3b6f8fcc-66a4-4193-bd3e-7b340341f5be";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -1988,7 +1982,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconWK;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: CAO GUANGXU (JTX9TS223Q)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: CAO GUANGXU (JTX9TS223Q)";
@@ -2004,9 +1998,9 @@
 				INFOPLIST_FILE = "DaysInLine WatchKit App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "24107384-2d79-4ba7-b80d-8c8a68e6cda2";
+				PROVISIONING_PROFILE = "25528afa-95b3-42ea-aedf-32619a5ecbd3";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
 				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
@@ -2017,7 +2011,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconWK;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: CAO GUANGXU";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: CAO GUANGXU";

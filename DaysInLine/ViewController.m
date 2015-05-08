@@ -580,7 +580,7 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
     NSURL *storeURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.com.sheepcao.DaysInLine"];
     NSString *docsPath = [storeURL path];
     
-    NSString *myImageName = [NSString stringWithFormat:@"%@@2x.png",modifyDate];
+    NSString *myImageName = [NSString stringWithFormat:@"%@.png",modifyDate];
     NSString *dayImagePath = [[NSString alloc] initWithString:[docsPath stringByAppendingPathComponent:myImageName]];
     
     

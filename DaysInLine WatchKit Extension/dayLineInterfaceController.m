@@ -16,13 +16,13 @@
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
-    
+
     NSLog(@"day:%@",context);
     
     NSURL *storeURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.com.sheepcao.DaysInLine"];
     NSString *docsPath = [storeURL path];
     
-    NSString *myImageName = [NSString stringWithFormat:@"%@@2x.png",context];
+    NSString *myImageName = [NSString stringWithFormat:@"%@.png",context];
 
     
     NSString *imagePath = [docsPath stringByAppendingPathComponent:myImageName];

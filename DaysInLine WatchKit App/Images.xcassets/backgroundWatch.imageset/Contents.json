@@ -3,18 +3,16 @@
     {
       "idiom" : "watch",
       "scale" : "2x",
-      "filename" : "backgroundWatch-1.png"
+      "filename" : "backgroundWatch.png"
     },
     {
       "idiom" : "watch",
       "screenWidth" : "{130,145}",
-      "filename" : "backgroundWatch.png",
       "scale" : "2x"
     },
     {
       "idiom" : "watch",
       "screenWidth" : "{146,165}",
-      "filename" : "backgroundWatch-2.png",
       "scale" : "2x"
     }
   ],

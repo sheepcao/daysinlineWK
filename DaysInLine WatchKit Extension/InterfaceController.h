@@ -10,8 +10,11 @@
 #import <Foundation/Foundation.h>
 
 @interface InterfaceController : WKInterfaceController
+@property (strong, nonatomic) IBOutlet WKInterfaceGroup *backGroup;
 - (IBAction)checkDayLine;
 
 - (IBAction)checkStats;
+@property (strong, nonatomic) IBOutlet WKInterfaceButton *dayLineBtn;
+@property (strong, nonatomic) IBOutlet WKInterfaceButton *statsBtn;
 
 @end

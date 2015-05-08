@@ -14,5 +14,6 @@
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *rowTitle;
 
 @property (weak, nonatomic) IBOutlet WKInterfaceLabel *statsNum;
+@property (weak, nonatomic) IBOutlet WKInterfaceGroup *rowBackGroup;
 
 @end

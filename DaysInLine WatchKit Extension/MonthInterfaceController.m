@@ -31,6 +31,7 @@
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     [super willActivate];
+    [self.backGroup setBackgroundImageNamed:@"backgroundWatch"];
 
 }
 
@@ -61,6 +62,7 @@
     
    
         rowInterfaceController *elementRow = [self.monthTable rowControllerAtIndex:i];
+        [elementRow.rowBackGroup setBackgroundImageNamed:@"textWatch"];
         
         if([[self currentLanguage] compare:@"zh-Hans" options:NSCaseInsensitiveSearch]==NSOrderedSame || [[self currentLanguage] compare:@"zh-Hant" options:NSCaseInsensitiveSearch]==NSOrderedSame)
         {

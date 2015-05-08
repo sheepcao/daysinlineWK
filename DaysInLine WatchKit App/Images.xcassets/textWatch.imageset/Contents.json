@@ -3,12 +3,12 @@
     {
       "idiom" : "watch",
       "scale" : "2x",
-      "filename" : "textWatch-2.png"
+      "filename" : "textWatch.png"
     },
     {
       "idiom" : "watch",
       "screenWidth" : "{130,145}",
-      "filename" : "textWatch.png",
+      "filename" : "textWatch-2.png",
       "scale" : "2x"
     },
     {

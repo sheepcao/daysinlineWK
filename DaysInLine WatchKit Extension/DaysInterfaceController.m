@@ -27,7 +27,8 @@
 
 - (void)awakeWithContext:(id)context {
     [super awakeWithContext:context];
-    
+    [self.backGroup setBackgroundImageNamed:@"backgroundWatch"];
+
     self.MonthArray =@[@"Jan",@"Feb",@"Mar",@"Apr",@"May",@"Jun",@"Jul",@"Aug",@"Sep",@"Oct",@"Nov",@"Dec"];
 
     currentMon = [context intValue];
@@ -84,6 +85,8 @@
         rowInterfaceController *elementRow = [self.datesTable rowControllerAtIndex:i];
         
         [elementRow.rowTitle setText:self.datesInMonth[i]];
+        [elementRow.rowBackGroup setBackgroundImageNamed:@"textWatch"];
+
     }
 }
 

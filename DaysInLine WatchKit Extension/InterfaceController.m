@@ -28,6 +28,15 @@
 - (void)willActivate {
     // This method is called when watch view controller is about to be visible to user
     [super willActivate];
+    
+    [self.backGroup setBackgroundImageNamed:@"backgroundWatch"];
+//    [self.backGroup setBackgroundImage:nil];
+
+    [self.dayLineBtn setBackgroundImageNamed:@"textWatch"];
+//    [self.dayLineBtn setBackgroundImage:nil];
+
+    [self.statsBtn setBackgroundImageNamed:@"textWatch"];
+
     [self initDB];
 
 }

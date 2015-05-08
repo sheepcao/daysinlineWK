@@ -89,6 +89,7 @@ double expendOfAll;
         
         rowInterfaceController *elementRow = [self.statsTable rowControllerAtIndex:i];
 
+        [elementRow.rowBackGroup setBackgroundImageNamed:@"rowBack"];
         [elementRow.rowTitle setText:self.statsItems[i]];
 
         [elementRow.statsNum setText:self.statsNums[i]];

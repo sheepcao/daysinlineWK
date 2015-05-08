@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
@@ -15,14 +15,14 @@
                                 <group width="0.81000000000000005" height="0.69999999999999996" alignment="right" verticalAlignment="center" layout="vertical" radius="0.0" id="AOb-q0-LOb">
                                     <items>
                                         <button width="0.93999999999999995" height="0.45000000000000001" alignment="left" title="  查看日线" backgroundImage="textWatch.png" id="KdD-IE-kcX">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" red="0.50196081400000003" green="0.53725492949999998" blue="0.90196084980000002" alpha="1" colorSpace="deviceRGB"/>
                                             <fontDescription key="font" type="system" weight="thin" pointSize="18"/>
                                             <connections>
                                                 <action selector="checkDayLine" destination="AgC-eL-Hgc" id="IKA-In-S8f"/>
                                             </connections>
                                         </button>
                                         <button width="0.93999999999999995" height="0.45000000000000001" alignment="left" verticalAlignment="bottom" title="  数据统计" backgroundImage="textWatch.png" id="470-SC-zZY">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleColor" red="0.50196081400000003" green="0.53725492949999998" blue="0.90196084980000002" alpha="1" colorSpace="deviceRGB"/>
                                             <fontDescription key="font" type="system" weight="thin" pointSize="18"/>
                                             <connections>
                                                 <action selector="checkStats" destination="AgC-eL-Hgc" id="ylE-x2-yjl"/>
@@ -33,6 +33,11 @@
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="backGroup" destination="cg4-0X-xns" id="QA3-EK-Wjg"/>
+                        <outlet property="dayLineBtn" destination="KdD-IE-kcX" id="5fT-aD-NYI"/>
+                        <outlet property="statsBtn" destination="470-SC-zZY" id="gLd-er-Vmp"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="335" y="344"/>
@@ -45,12 +50,13 @@
                         <table alignment="center" id="jrc-0e-RK5">
                             <items>
                                 <tableRow identifier="defaultRow" id="RIa-ui-U3q" customClass="rowInterfaceController">
-                                    <group key="rootItem" width="1" alignment="left" backgroundImage="rowBack.png" radius="0.0" id="F20-iJ-3Rx">
+                                    <group key="rootItem" width="1" height="37.5" alignment="left" backgroundImage="rowBack.png" radius="0.0" id="F20-iJ-3Rx">
                                         <items>
                                             <label alignment="left" verticalAlignment="center" text="Label" id="IWp-5u-sC2">
                                                 <fontDescription key="font" type="system" pointSize="15"/>
                                             </label>
                                             <label width="52" alignment="right" verticalAlignment="center" text="Label" textAlignment="right" id="312-hI-v2Z">
+                                                <color key="textColor" red="0.50196081400000003" green="0.53725492949999998" blue="0.90196084980000002" alpha="1" colorSpace="deviceRGB"/>
                                                 <fontDescription key="font" type="system" weight="thin" pointSize="17"/>
                                             </label>
                                         </items>
@@ -86,12 +92,13 @@
                                                     <group key="rootItem" width="1" alignment="left" backgroundImage="textWatch.png" id="m5Y-VS-gLl">
                                                         <items>
                                                             <label width="60" alignment="center" verticalAlignment="center" text="1月" textAlignment="center" id="oPp-g0-4DJ">
-                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <color key="textColor" red="0.50196081400000003" green="0.53725492949999998" blue="0.90196084980000002" alpha="1" colorSpace="deviceRGB"/>
                                                                 <fontDescription key="font" type="system" weight="thin" pointSize="17"/>
                                                             </label>
                                                         </items>
                                                     </group>
                                                     <connections>
+                                                        <outlet property="rowBackGroup" destination="m5Y-VS-gLl" id="LrD-rC-p84"/>
                                                         <outlet property="rowTitle" destination="oPp-g0-4DJ" id="izj-Fd-Nuu"/>
                                                     </connections>
                                                 </tableRow>
@@ -125,7 +132,7 @@
                                                     <group key="rootItem" width="1" height="37" alignment="left" backgroundImage="textWatch.png" id="lSK-2b-mpI">
                                                         <items>
                                                             <label alignment="center" verticalAlignment="center" text="Label" id="qSU-8K-K4n">
-                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                                <color key="textColor" red="0.50196081400000003" green="0.53725492949999998" blue="0.90196084980000002" alpha="1" colorSpace="deviceRGB"/>
                                                                 <fontDescription key="font" type="system" pointSize="16"/>
                                                             </label>
                                                         </items>
