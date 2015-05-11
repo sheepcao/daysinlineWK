@@ -271,4 +271,5 @@ CFBundleDisplayName="DaysInLine";
 /* No comment provided by engineer. */
 "音效" = "Sound";
 "DaysInLine" = "DaysInLine";
-
+"全部事件" = "All Events";
+"%@ 到 %@" = "%@ To %@";

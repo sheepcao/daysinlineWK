@@ -163,7 +163,7 @@ CFBundleDisplayName="历历在目";
 "查看照片" = "查看照片";
 
 /* No comment provided by engineer. */
-"查看结果" = "查看结果";
+"查看结果" = "总体概览";
 
 /* No comment provided by engineer. */
 "添加事项" = "添加事项";
@@ -272,4 +272,5 @@ CFBundleDisplayName="历历在目";
 
 "DaysInLine" = "历历在目";
 "How is my day looks.." = "我的一天是这样的...";
-
+"全部事件"="全部事件";
+"%@ 到 %@" = "%@ 到 %@";

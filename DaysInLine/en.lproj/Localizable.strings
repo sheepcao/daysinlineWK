@@ -164,7 +164,7 @@ CFBundleDisplayName="DaysInLine";
 
 
 /* No comment provided by engineer. */
-"查看结果" = "Result";
+"查看结果" = "Overview";
 
 /* No comment provided by engineer. */
 "添加事项" = "new item";
@@ -271,5 +271,6 @@ CFBundleDisplayName="DaysInLine";
 /* No comment provided by engineer. */
 "音效" = "Sound";
 "DaysInLine" = "DaysInLine";
-"How is my day looks.." = "我的一天是这样的...";
 
+"全部事件" = "All Events";
+"%@ 到 %@" = "%@ To %@";

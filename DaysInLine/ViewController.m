@@ -16,6 +16,8 @@
 #import "collectionView.h"
 #import "statisticView.h"
 #import "statisticViewController.h"
+#import "allEventsViewController.h"
+
 #import "settingView.h"
 #import "contractView.h"
 #import "buttonTranslate.h"
@@ -154,7 +156,8 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
         
         CGRect frame7 = CGRectMake(self.view.frame.origin.x+80,self.view.frame.origin.y+5, self.view.frame.size.width-85, self.view.frame.size.height-5 );
             
-        NSLog(@"frame here is :%f  y, %f   height",frame7.origin.y,frame7.size.height);
+            
+        NSLog(@"frame7 here is :%f  y, %f   height",frame7.origin.y,frame7.size.height);
             
         
         self.my_select = [[selectView alloc] initWithFrame:frame7];
@@ -1384,6 +1387,8 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
     //refresh calendar
     
     [self.my_select.calendar reloadData];
+    [self.my_select.eventsTable reloadData];
+
     
 }
 
@@ -1836,15 +1841,7 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
     //[[Frontia getStatistics] logEvent:@"10018" eventLabel:@"statisticTap"];
 
     inwhichButton = 4;
-    //[self.view addSubview:self.iAdBannerView];
-    //[self.view addSubview:self.gAdBannerView];
 
-//    if (self.bannerIsVisible) {
-//        [self.view addSubview:self.iAdBannerView];
-//        
-//    }else {
-//        [self.view addSubview:self.gAdBannerView];
-//    }
     //播放
     if (soundSwitch) {
         
@@ -1871,6 +1868,8 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
     [self.my_setting setHidden:YES];
     
     [self.my_analyse.resultButton addTarget:self action:@selector(analyseResultButtonTapped) forControlEvents:UIControlEventTouchUpInside];
+    [self.my_analyse.allEventsButton addTarget:self action:@selector(analyseAllEventsButtonTapped) forControlEvents:UIControlEventTouchUpInside];
+
     
 
 
@@ -1927,7 +1926,7 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
 
     
 
-   // statisticViewController *my_statisticViewController = [[statisticViewController alloc] initWithNibName:@"statisticViewController" bundle:nil];
+
     my_statisticViewController.startDate = start;
     my_statisticViewController.endDate = end;
     
@@ -1935,6 +1934,52 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
     [self presentViewController:my_statisticViewController animated:YES completion:Nil ];
     
 
+}
+
+-(void)analyseAllEventsButtonTapped
+{
+    //aaaaaa
+    if (soundSwitch) {
+        
+        CFBundleRef mainbundle=CFBundleGetMainBundle();
+        SystemSoundID soundObject_goInDay;
+        //获得声音文件URL
+        CFURLRef soundfileurl=CFBundleCopyResourceURL(mainbundle,CFSTR("goEdit"),CFSTR("wav"),NULL);
+        //创建system sound 对象
+        AudioServicesCreateSystemSoundID(soundfileurl, &soundObject_goInDay);
+        AudioServicesPlaySystemSound(soundObject_goInDay);
+    }
+    
+    
+    //  NSTimeZone *zone = [NSTimeZone systemTimeZone];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init] ;
+    formatter.dateFormat = @"yyyy-MM-dd";
+    
+    if ([self.my_analyse.dateStart.date compare: self.my_analyse.dateEnd.date] ==NSOrderedDescending) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"出错啦！",nil)
+                                                        message:NSLocalizedString(@"统计起始日期大于终止日期",nil)
+                                                       delegate:nil
+                                              cancelButtonTitle:NSLocalizedString(@"确定",nil)
+                                              otherButtonTitles:nil];
+        
+        [ alert  show];
+        return;
+    }
+    
+    NSString *start = [formatter stringFromDate:self.my_analyse.dateStart.date];
+    NSString *end = [formatter stringFromDate:self.my_analyse.dateEnd.date];
+    
+    
+    
+    allEventsViewController *my_statisticViewController;
+    my_statisticViewController = [[allEventsViewController alloc] initWithNibName:@"allEventsViewController" bundle:nil];
+    
+    my_statisticViewController.startDate = start;
+    my_statisticViewController.endDate = end;
+    
+    my_statisticViewController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:my_statisticViewController animated:YES completion:Nil ];
+    
 }
 
 

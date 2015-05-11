@@ -77,7 +77,7 @@
         
              
         
-        self.resultButton = [[UIButton alloc] initWithFrame:CGRectMake(self.frame.size.width/2-50, self.frame.size.height-100, 100, 30) ];
+        self.resultButton = [[UIButton alloc] initWithFrame:CGRectMake(self.frame.size.width/2-105, self.frame.size.height-100, 100, 35) ];
         [self.resultButton setBackgroundImage:[UIImage imageNamed: @"password.png"] forState:UIControlStateNormal];
         [self.resultButton setTitle:NSLocalizedString(@"查看结果",nil) forState:UIControlStateNormal];
         self.resultButton.backgroundColor = [UIColor clearColor];
@@ -85,8 +85,18 @@
         [self.resultButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
         self.resultButton.titleLabel.font = [UIFont fontWithName:@"BoldOblique" size:17];
         
+        self.allEventsButton = [[UIButton alloc] initWithFrame:CGRectMake(self.frame.size.width/2+5, self.resultButton.frame.origin.y, 100, 35) ];
+        [self.allEventsButton setBackgroundImage:[UIImage imageNamed: @"password.png"] forState:UIControlStateNormal];
+        [self.allEventsButton setTitle:NSLocalizedString(@"全部事件",nil) forState:UIControlStateNormal];
+        self.allEventsButton.backgroundColor = [UIColor clearColor];
+        
+        [self.allEventsButton setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+        self.allEventsButton.titleLabel.font = [UIFont fontWithName:@"BoldOblique" size:17];
+        
 
         [self addSubview:self.resultButton];
+        [self addSubview:self.allEventsButton];
+
 
 
     }
