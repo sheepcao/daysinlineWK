@@ -21,7 +21,7 @@
 #import "buttonTranslate.h"
 #import "rightTranslate.h"
 #import "globalVars.h"
-
+#import "FMDatabase.h"
 
 //#import "JSONKit.h"
 //#import <Frontia/Frontia.h>
@@ -29,6 +29,8 @@
 
 
 @interface ViewController ()<CKCalendarDelegate,UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate,UIActionSheetDelegate>
+
+@property (nonatomic,strong) FMDatabase *db;
 
 @property (nonatomic,weak) UIImageView *background;
 @property (nonatomic,weak) homeView *homePage;
@@ -83,6 +85,8 @@
 @end
 
 @implementation ViewController
+
+@synthesize db;
 const int LABEL_SPACE  = 30;
 
 
@@ -322,7 +326,7 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
     NSString *queryDays = [NSString stringWithFormat:@"SELECT DATE from DAYTABLE"];
     const char *queryDaystatement = [queryDays UTF8String];
     if (sqlite3_prepare_v2(dataBase, queryDaystatement, -1, &statement_1, NULL)==SQLITE_OK) {
-        NSLog(@"select success!!!");
+//        NSLog(@"select success!!!");
         while (sqlite3_step(statement_1)==SQLITE_ROW) {
             //找到存在的日期，设置日历上的有事件的日期
             NSLog(@"find something!!!!");
@@ -1375,6 +1379,12 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
     [self.my_select.alltagTable setHidden:NO];
     [self.my_select.eventInTagTable setHidden:YES];
     [self.my_select.returnToTags setHidden:YES];
+    
+    
+    //refresh calendar
+    
+    [self.my_select.calendar reloadData];
+    
 }
 
 -(void)returnToTagsTapped
@@ -2628,12 +2638,46 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
 #pragma mark CKCalender delegate
 - (void)calendar:(CKCalendarView *)calendar configureDateItem:(CKDateItem *)dateItem forDate:(NSDate *)date {
  
+    
     // TODO: play with the coloring if we want to...
+    
+    
+    db = [FMDatabase databaseWithPath:databasePath];
+    
+    if (![db open]) {
+        NSLog(@"Could not open db.");
+        return;
+    }
+    
+    NSDateFormatter *dateFormatter= [[NSDateFormatter alloc] init];
+    self.HasEventsDates = [[NSMutableArray alloc] init];
+    //  NSTimeZone *zone = [NSTimeZone systemTimeZone];
+    
+    [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+    
+
+    FMResultSet *rs = [db executeQuery:@"SELECT DATE from DAYTABLE"];
+    while ([rs next]) {
+        NSString *dateSelect = [rs stringForColumn:@"DATE"];
+        FMResultSet *rs1 = [db executeQuery:@"SELECT * from EVENT where date = ?",dateSelect];
+        
+        if ( [rs1 next])
+        {
+            NSDate *dateUnconvert = [dateFormatter dateFromString:dateSelect];
+            [self.HasEventsDates addObject:dateUnconvert];
+            
+        }
+    }
+    [db close];
+    
+    
+    
+    
+
     
   
     
     if ([self dateHasEvents:date]) {
-        //dateItem.backgroundColor = [UIColor redColor];
         dateItem.selectedImage = [UIImage imageNamed:@"日期角标.png"];
         dateItem.textColor = [UIColor blackColor];
     }

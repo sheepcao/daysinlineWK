@@ -117,9 +117,17 @@
     while ([rs next]) {
         
         
+        
         NSString *date = [rs stringForColumn:@"DATE"];
         
-        [self.allDates addObject:date];
+        FMResultSet *rs1 = [db executeQuery:@"SELECT * from EVENT where date = ?",date];
+        
+        if ( [rs1 next])
+        {
+            [self.allDates addObject:date];
+
+        }
+
         
       
         
