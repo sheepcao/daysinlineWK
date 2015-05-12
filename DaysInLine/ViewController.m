@@ -464,7 +464,7 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
     CFBundleRef mainbundle=CFBundleGetMainBundle();
    // SystemSoundID soundFileObject;
     //获得声音文件URL
-    CFURLRef soundfileurl=CFBundleCopyResourceURL(mainbundle,CFSTR("editSound"),CFSTR("wav"),NULL);
+    CFURLRef soundfileurl=CFBundleCopyResourceURL(mainbundle,CFSTR("menuSound"),CFSTR("mp3"),NULL);
     //创建system sound 对象
     AudioServicesCreateSystemSoundID(soundfileurl, &soundFileObject);
     
@@ -1078,6 +1078,12 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
 
 -(void)shareTappedWithActionSheet:(id)button
 {
+    
+    if (soundSwitch) {
+        
+        
+        AudioServicesPlaySystemSound(soundFileObject);
+    }
     
     
     if (self.my_dayline.hidden == NO) {

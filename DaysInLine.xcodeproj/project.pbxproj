@@ -268,6 +268,8 @@
 		A4CB4FC91AFC45E00006FFF4 /* DaysInLine WatchKit Extension.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = A465D2581ADFAE67002CE071 /* DaysInLine WatchKit Extension.entitlements */; };
 		A4CB4FCA1AFC45E10006FFF4 /* DaysInLine WatchKit Extension.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = A465D2581ADFAE67002CE071 /* DaysInLine WatchKit Extension.entitlements */; };
 		A4CF989F1AE4D37C00B599DC /* dayLineInterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CF989E1AE4D37C00B599DC /* dayLineInterfaceController.m */; };
+		A4D374431B01FE9E000AC36D /* menuSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4D374421B01FE9E000AC36D /* menuSound.mp3 */; };
+		A4D374441B01FE9E000AC36D /* menuSound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A4D374421B01FE9E000AC36D /* menuSound.mp3 */; };
 		A4FFCDE41A173CBA00B16AE3 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FFCDE31A173CBA00B16AE3 /* EventKit.framework */; };
 		A4FFCDE61A173CBF00B16AE3 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FFCDE51A173CBF00B16AE3 /* EventKitUI.framework */; };
 		A4FFCE0B1A173E9500B16AE3 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4FFCE091A173E9500B16AE3 /* libMobClickLibrary.a */; };
@@ -612,6 +614,7 @@
 		A4C857001AE6568C005208F0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		A4CF989D1AE4D37C00B599DC /* dayLineInterfaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dayLineInterfaceController.h; sourceTree = "<group>"; };
 		A4CF989E1AE4D37C00B599DC /* dayLineInterfaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dayLineInterfaceController.m; sourceTree = "<group>"; };
+		A4D374421B01FE9E000AC36D /* menuSound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = menuSound.mp3; sourceTree = "<group>"; };
 		A4FFCDE31A173CBA00B16AE3 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		A4FFCDE51A173CBF00B16AE3 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		A4FFCE091A173E9500B16AE3 /* libMobClickLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMobClickLibrary.a; sourceTree = "<group>"; };
@@ -828,6 +831,7 @@
 				0BEFA88418D9F8A50016EC80 /* goEdit.wav */,
 				0BEFA88618D9FB4A0016EC80 /* okSound.wav */,
 				0BE73FEE18D7416400011631 /* addSound.wav */,
+				A4D374421B01FE9E000AC36D /* menuSound.mp3 */,
 				0BF9EF7318BB8A6D00F38370 /* check.png */,
 				0B3686B918CCBC900036DCA3 /* check@2x.png */,
 				0BF9EF7518BB8A6D00F38370 /* cross.png */,
@@ -1466,6 +1470,7 @@
 				0BA61BEB18A2886B000B7163 /* 按键3-2.png in Resources */,
 				0B92BE3518B0C4F3003AE50C /* searchInAlert.png in Resources */,
 				0B1D8E9418CE05E400B1FA6B /* 收入高亮.png in Resources */,
+				A4D374431B01FE9E000AC36D /* menuSound.mp3 in Resources */,
 				0B066B8B18C8CA39004827D7 /* 到.png in Resources */,
 				0B7C5470198608C3007E8714 /* shareButton.png in Resources */,
 				0BBED40D18A68AFA00B47E53 /* cell4-1.png in Resources */,
@@ -1536,6 +1541,7 @@
 				A49116F01AEF173D0050A6DA /* timeBtn.png in Resources */,
 				A4709E4B1B0085AC0096E3BF /* allEventsBack.png in Resources */,
 				A4CB4FC51AFC45C20006FFF4 /* DaysInLine WatchKit Extension.entitlements in Resources */,
+				A4D374441B01FE9E000AC36D /* menuSound.mp3 in Resources */,
 				A4CB4FC61AFC45D30006FFF4 /* DaysInLine.entitlements in Resources */,
 				A4C856E91AE63B42005208F0 /* Localizable.strings in Resources */,
 				A43BF0D21B008250004AA05D /* textFrame.png in Resources */,

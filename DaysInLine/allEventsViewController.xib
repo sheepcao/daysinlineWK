@@ -15,7 +15,7 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="allEventsBack.png" translatesAutoresizingMaskIntoConstraints="NO" id="uBd-Bg-tKI">
@@ -104,20 +104,20 @@
                     <exclude reference="hrM-y9-bxu"/>
                 </mask>
                 <mask key="constraints">
+                    <exclude reference="4qZ-HH-mxe"/>
+                    <exclude reference="ijm-oB-fUs"/>
+                    <exclude reference="vVm-WO-FH3"/>
+                    <exclude reference="Iee-RK-M4J"/>
+                    <exclude reference="VsW-b8-xkF"/>
+                    <exclude reference="e1Y-Ct-iXX"/>
                     <exclude reference="NB3-oO-pNc"/>
                     <exclude reference="Qq7-Vo-HYU"/>
                     <exclude reference="dUc-0e-np8"/>
                     <exclude reference="hi8-CW-IlC"/>
-                    <exclude reference="4qZ-HH-mxe"/>
-                    <exclude reference="ijm-oB-fUs"/>
-                    <exclude reference="vVm-WO-FH3"/>
                     <exclude reference="HEe-hT-zr4"/>
                     <exclude reference="LpW-p0-RAT"/>
                     <exclude reference="jNW-wJ-VTw"/>
                     <exclude reference="z07-We-m0X"/>
-                    <exclude reference="Iee-RK-M4J"/>
-                    <exclude reference="VsW-b8-xkF"/>
-                    <exclude reference="e1Y-Ct-iXX"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -128,20 +128,20 @@
                     <include reference="hrM-y9-bxu"/>
                 </mask>
                 <mask key="constraints">
+                    <include reference="4qZ-HH-mxe"/>
+                    <include reference="ijm-oB-fUs"/>
+                    <include reference="vVm-WO-FH3"/>
+                    <include reference="Iee-RK-M4J"/>
+                    <include reference="VsW-b8-xkF"/>
+                    <include reference="e1Y-Ct-iXX"/>
                     <include reference="NB3-oO-pNc"/>
                     <include reference="Qq7-Vo-HYU"/>
                     <include reference="dUc-0e-np8"/>
                     <include reference="hi8-CW-IlC"/>
-                    <include reference="4qZ-HH-mxe"/>
-                    <include reference="ijm-oB-fUs"/>
-                    <include reference="vVm-WO-FH3"/>
                     <include reference="HEe-hT-zr4"/>
                     <include reference="LpW-p0-RAT"/>
                     <include reference="jNW-wJ-VTw"/>
                     <exclude reference="z07-We-m0X"/>
-                    <include reference="Iee-RK-M4J"/>
-                    <include reference="VsW-b8-xkF"/>
-                    <include reference="e1Y-Ct-iXX"/>
                 </mask>
             </variation>
         </view>

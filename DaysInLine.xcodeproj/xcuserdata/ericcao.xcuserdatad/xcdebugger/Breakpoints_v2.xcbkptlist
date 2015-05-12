@@ -154,11 +154,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DaysInLine/ViewController.m"
-            timestampString = "453026690.069621"
+            timestampString = "453115634.101327"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1940"
-            endingLineNumber = "1940"
+            startingLineNumber = "1946"
+            endingLineNumber = "1946"
             landmarkName = "-analyseAllEventsButtonTapped"
             landmarkType = "5">
          </BreakpointContent>
@@ -170,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DaysInLine/ViewController.m"
-            timestampString = "453026690.069621"
+            timestampString = "453115634.101327"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1972"
-            endingLineNumber = "1972"
+            startingLineNumber = "1978"
+            endingLineNumber = "1978"
             landmarkName = "-analyseAllEventsButtonTapped"
             landmarkType = "5">
          </BreakpointContent>
