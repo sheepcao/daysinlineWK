@@ -2029,7 +2029,7 @@ int recorderID;
                 notification.applicationIconBadgeNumber = 1; //设置app图标右上角的数字
                 
                 notification.alertBody = [NSString stringWithFormat:NSLocalizedString(@"%@",nil),self.theme.text];
-                remindSwitch ? (notification.soundName = UILocalNotificationDefaultSoundName):(notification.soundName = nil);
+                notification.soundName = UILocalNotificationDefaultSoundName;
 
                 notification.userInfo=[[NSDictionary alloc] initWithObjectsAndKeys:@"value1",@"key1",nil];
  
@@ -2097,7 +2097,7 @@ int recorderID;
                 notification.applicationIconBadgeNumber = 1; //设置app图标右上角的数字
                 
                 notification.alertBody = [NSString stringWithFormat:NSLocalizedString(@"%@",nil),self.theme.text];
-                remindSwitch ? (notification.soundName = UILocalNotificationDefaultSoundName):(notification.soundName = nil);
+                notification.soundName = UILocalNotificationDefaultSoundName;
 
                 notification.userInfo=[[NSDictionary alloc] initWithObjectsAndKeys:@"value1",@"key1",nil];
                 
@@ -3055,9 +3055,13 @@ int recorderID;
     NSFileManager *fileManager =[NSFileManager defaultManager];
    
     // Set the audio file
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     
-    NSString *voicePath =[[paths objectAtIndex:0] stringByAppendingPathComponent:[NSString stringWithFormat:@"message%d.caf",level]];
+    NSURL *storeURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.com.sheepcao.DaysInLine"];
+    NSString *voicePath = [[storeURL path] stringByAppendingPathComponent:[NSString stringWithFormat:@"message%d.caf",level]];
+    
+//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    
+//    NSString *voicePath =[[paths objectAtIndex:0] stringByAppendingPathComponent:[NSString stringWithFormat:@"message%d.caf",level]];
     
     if([fileManager fileExistsAtPath:voicePath] == YES)
     {

@@ -273,3 +273,8 @@ CFBundleDisplayName="DaysInLine";
 "DaysInLine" = "DaysInLine";
 "全部事件" = "All Events";
 "%@ 到 %@" = "%@ To %@";
+
+"升级通告" = "Update";
+"广告烦人？历历在目已推出专业版，欢迎前往下载。" = "Download DaysInLine Pro. to get rid of ADs.";
+"暂不" = "Not now";
+"前往下载" = "Download";

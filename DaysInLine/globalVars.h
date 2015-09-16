@@ -62,4 +62,6 @@ BOOL remindSwitch;
 
 #define ALLAPP_URL @"http://itunes.apple.com/us/artist/cao-guangxu/id844914783"
 
+#define proAPP_URL @"https://itunes.apple.com/cn/app/daysinline-pro./id998813044?ls=1&mt=8"
+
 #endif

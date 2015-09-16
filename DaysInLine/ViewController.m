@@ -106,8 +106,7 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
 - (void)viewDidLoad
 {
     
-       [super viewDidLoad];
-    
+    [super viewDidLoad];
     
     
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backgroundHome.png"]];
@@ -552,9 +551,19 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
 
    //   NSLog(@"alarmValue:%@",alarmValue);
 
-    
-
+    int randomNum = arc4random()%100;
+    if(randomNum <65)
+    {
+        [self showProAlert];
+    }
  
+}
+
+-(void)showProAlert
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"升级通告",nil) message:NSLocalizedString(@"广告烦人？历历在目已推出专业版，欢迎前往下载。",nil) delegate:self cancelButtonTitle:NSLocalizedString(@"暂不",nil) otherButtonTitles:NSLocalizedString(@"前往下载",nil), nil];
+    alert.tag  = 888;
+    [alert show];
 }
 
 
@@ -4169,7 +4178,16 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
             
         }
 
+    }else if (alertView.tag == 888)
+    {
+        if (buttonIndex ==1)
+        {
+            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:proAPP_URL]];
+
+        }
     }
+    
+    
     
 }
 

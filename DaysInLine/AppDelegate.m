@@ -36,6 +36,10 @@
        withDescription:@"DaysinLine-share-v1.0"];
 
     [self setShareIDs];
+    
+    if ([application respondsToSelector:@selector(registerUserNotificationSettings:)]) {
+        [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
+    }
 
    return YES;
 }
