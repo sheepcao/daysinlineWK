@@ -51,6 +51,12 @@ BOOL remindSwitch;
 #define mainHeight 150
 
 #define kAdViewPortraitRect CGRectMake(0, [[UIScreen mainScreen] bounds].size.height-48,[[UIScreen mainScreen] bounds].size.width,48)
+
+
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+
+
 #define VERSIONNUMBER   [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 
 #define ADMOB_ID @"ca-app-pub-3074684817942615/1126186689"
@@ -63,5 +69,9 @@ BOOL remindSwitch;
 #define ALLAPP_URL @"http://itunes.apple.com/us/artist/cao-guangxu/id844914783"
 
 #define proAPP_URL @"https://itunes.apple.com/cn/app/daysinline-pro./id998813044?ls=1&mt=8"
+
+
+#define backupURL @"http://cgx.nwpu.info/daysinline/uploads.php"
+#define backupPath @"http://cgx.nwpu.info/daysinline/upload/"
 
 #endif

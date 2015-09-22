@@ -1,0 +1,18 @@
+
+/* Class = "UIButton"; normalTitle = "返 回"; ObjectID = "LqF-m8-0zz"; */
+"LqF-m8-0zz.normalTitle" = "返 回";
+
+/* Class = "UIButton"; normalTitle = "同步到本地"; ObjectID = "eaI-DU-LF4"; */
+"eaI-DU-LF4.normalTitle" = "同步到本地";
+
+/* Class = "UILabel"; text = " 最近备份:"; ObjectID = "f7T-hn-xC6"; */
+"f7T-hn-xC6.text" = " 最近备份:";
+
+/* Class = "UILabel"; text = "注：当前仅支持文字和语音数据备份，暂不支持照片备份。"; ObjectID = "kcl-tB-i4o"; */
+"kcl-tB-i4o.text" = "注：当前免费版仅支持文字和语音数据备份，不支持照片备份。";
+
+/* Class = "UIButton"; normalTitle = "立即备份"; ObjectID = "vhg-xN-1rl"; */
+"vhg-xN-1rl.normalTitle" = "立即备份";
+
+/* Class = "UILabel"; text = "Eric's iPhone , 2015-9-15 15:31:00"; ObjectID = "w2B-br-KFS"; */
+"w2B-br-KFS.text" = "Eric's iPhone , 2015-9-15 15:31:00";

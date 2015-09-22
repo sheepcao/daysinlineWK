@@ -1,0 +1,57 @@
+
+/* Class = "UILabel"; text = "进入私有云"; ObjectID = "3Aa-lH-NN3"; */
+"3Aa-lH-NN3.text" = "进入私有云";
+
+/* Class = "UITextField"; placeholder = "密码"; ObjectID = "5r3-rz-rpd"; */
+"5r3-rz-rpd.placeholder" = "密码";
+
+/* Class = "UIButton"; normalTitle = "返 回"; ObjectID = "807-ud-XGb"; */
+"807-ud-XGb.normalTitle" = "返 回";
+
+/* Class = "UITextField"; placeholder = "用户名"; ObjectID = "9Kw-2i-3Hn"; */
+"9Kw-2i-3Hn.placeholder" = "用户名";
+
+/* Class = "UITextField"; placeholder = "用户名"; ObjectID = "Dlf-6F-ihg"; */
+"Dlf-6F-ihg.placeholder" = "用户名";
+
+/* Class = "UILabel"; text = "*"; ObjectID = "ECa-jA-CVz"; */
+"ECa-jA-CVz.text" = "*";
+
+/* Class = "UILabel"; text = "点击提交表示同意"; ObjectID = "JsR-Ci-zqH"; */
+"JsR-Ci-zqH.text" = "点击提交表示同意";
+
+/* Class = "UIButton"; normalTitle = "《捣塔圈用户协议》"; ObjectID = "OgH-4e-fGr"; */
+"OgH-4e-fGr.normalTitle" = "《捣塔圈用户协议》";
+
+/* Class = "UIButton"; normalTitle = "提交"; ObjectID = "SHm-ZG-gyy"; */
+"SHm-ZG-gyy.normalTitle" = "提交";
+
+/* Class = "UILabel"; text = "*"; ObjectID = "agP-IH-dwA"; */
+"agP-IH-dwA.text" = "*";
+
+/* Class = "UIButton"; normalTitle = "前往注册"; ObjectID = "dXj-tF-BSh"; */
+"dXj-tF-BSh.normalTitle" = "前往注册";
+
+/* Class = "UILabel"; text = "*"; ObjectID = "fN6-0n-1m9"; */
+"fN6-0n-1m9.text" = "*";
+
+/* Class = "UILabel"; text = "注 册"; ObjectID = "g0e-UG-ZnY"; */
+"g0e-UG-ZnY.text" = "注 册";
+
+/* Class = "UITextField"; placeholder = "确认密码"; ObjectID = "imI-tk-dMA"; */
+"imI-tk-dMA.placeholder" = "确认密码";
+
+/* Class = "UILabel"; text = "点击登录表示同意"; ObjectID = "jUl-OS-g0E"; */
+"jUl-OS-g0E.text" = "点击登录表示同意";
+
+/* Class = "UIButton"; normalTitle = "《捣塔圈用户协议》"; ObjectID = "mPu-2z-ZPE"; */
+"mPu-2z-ZPE.normalTitle" = "《捣塔圈用户协议》";
+
+/* Class = "UIButton"; normalTitle = "登  录"; ObjectID = "nav-0b-SN8"; */
+"nav-0b-SN8.normalTitle" = "登  录";
+
+/* Class = "UILabel"; text = "登 录"; ObjectID = "nzE-Dx-7uX"; */
+"nzE-Dx-7uX.text" = "登 录";
+
+/* Class = "UITextField"; placeholder = "密码"; ObjectID = "uw8-bX-qCW"; */
+"uw8-bX-qCW.placeholder" = "密码";

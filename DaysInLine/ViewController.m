@@ -25,6 +25,8 @@
 #import "globalVars.h"
 #import "FMDatabase.h"
 
+#import "backupViewController.h"
+
 //#import "JSONKit.h"
 //#import <Frontia/Frontia.h>
 
@@ -131,7 +133,7 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
     self.collectEventEnd = [[NSMutableArray alloc] init];
     
     
-    self.settingInformation = [[NSArray alloc] initWithObjects:NSLocalizedString(@"按钮释义",nil),NSLocalizedString(@"团队作品",nil),NSLocalizedString(@"关于我们",nil), nil];
+    self.settingInformation = [[NSArray alloc] initWithObjects:NSLocalizedString(@"云备份",nil),NSLocalizedString(@"按钮释义",nil),NSLocalizedString(@"团队作品",nil),NSLocalizedString(@"关于我们",nil), nil];
     self.settingInformationLeft = [[NSArray alloc] initWithObjects:NSLocalizedString(@"版本",nil),@"QQ",@"email", nil];
     
     self.settingInformationRight = [[NSArray alloc] initWithObjects:VERSIONNUMBER,@"82107815",@"sheepcao1986@163.com", nil];
@@ -318,6 +320,10 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
         NSLog(@"数据库打开失败");
         
     }
+    
+    
+    [self movePriorPhoto];
+    
     
     NSDateFormatter *dateFormatter= [[NSDateFormatter alloc] init];
     self.HasEventsDates = [[NSMutableArray alloc] init];
@@ -561,7 +567,7 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
 
 -(void)showProAlert
 {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"升级通告",nil) message:NSLocalizedString(@"广告烦人？历历在目已推出专业版，欢迎前往下载。",nil) delegate:self cancelButtonTitle:NSLocalizedString(@"暂不",nil) otherButtonTitles:NSLocalizedString(@"前往下载",nil), nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"升级通告",nil) message:NSLocalizedString(@"去除广告，开启备份，欢迎下载历历在目专业版。",nil) delegate:self cancelButtonTitle:NSLocalizedString(@"暂不",nil) otherButtonTitles:NSLocalizedString(@"前往下载",nil), nil];
     alert.tag  = 888;
     [alert show];
 }
@@ -641,6 +647,116 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
     else return nil;
     
 }
+
+-(void)movePriorPhoto
+{
+    NSString *fullPath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
+    
+    NSURL *storeURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.com.sheepcao.DaysInLine"];
+    NSString *destPath = [storeURL path];
+    
+
+    
+    NSString *path;
+    NSFileManager *fm;
+    NSArray *dirArray;
+    NSError *error;
+    
+//    NSMutableArray *soundsNameArray = [[NSMutableArray alloc] init];
+    
+    
+    fm = [NSFileManager defaultManager];
+    
+    //获取当前的工作目录的路径
+    path = [fm currentDirectoryPath];
+    
+    dirArray = [fm contentsOfDirectoryAtPath:fullPath error:&error];
+    NSLog(@"path error:%@",error);
+    
+    NSString *allPhoeoNames = [self selectPhotoNames];
+    
+    NSArray *photoNameArray = [allPhoeoNames componentsSeparatedByString:@";"];
+    
+    for(path in dirArray)
+    {
+        if ([photoNameArray containsObject:path]) {
+            NSLog(@"path-------------%@",path);
+
+                NSError *error;
+            NSString *photoPath = [NSString stringWithFormat:@"%@/%@",fullPath,path];
+            NSString *photodestPath = [NSString stringWithFormat:@"%@/%@",destPath,path];
+
+            
+                BOOL success = [[NSFileManager defaultManager] copyItemAtPath:photoPath
+                                                                       toPath:photodestPath
+                                                                        error:&error];
+                
+                NSLog(@"copy Error description-%@ \n", [error localizedDescription]);
+                NSLog(@"copy Error reason-%@", [error localizedFailureReason]);
+                NSLog(@"copy success:%d",success);
+                
+                if (success) {
+                    
+                    BOOL success_delete =  [[NSFileManager defaultManager] removeItemAtPath:photoPath error:&error];
+                    NSLog(@"delete Error description-%@ \n", [error localizedDescription]);
+                    NSLog(@"delete Error reason-%@", [error localizedFailureReason]);
+                    
+                    NSLog(@"delete success:%d",success_delete);
+                    
+                }
+                
+            
+        }
+        
+    }
+    
+
+
+}
+
+
+-(NSString *)selectPhotoNames
+{
+    
+    NSString *photo = @"";
+    
+    sqlite3_stmt *statement;
+    const char *dbpath = [databasePath UTF8String];
+    if (sqlite3_open(dbpath, &dataBase)==SQLITE_OK) {
+        NSString *queryEvent = [NSString stringWithFormat:@"SELECT photoDir from event"];
+        const char *queryEventstatment = [queryEvent UTF8String];
+        if (sqlite3_prepare_v2(dataBase, queryEventstatment, -1, &statement, NULL)==SQLITE_OK) {
+            while (sqlite3_step(statement)==SQLITE_ROW) {
+
+            char *photo_mdfy = (char *)sqlite3_column_text(statement, 0);
+               if (photo_mdfy) {
+                   
+                   
+                   
+                   NSString *onePhoto = [[NSString alloc] initWithUTF8String:photo_mdfy];
+                   if(![onePhoto isEqualToString:@""]&&![onePhoto isEqualToString:@" "])
+                   {
+                   photo = [NSString stringWithFormat:@"%@;%@",photo,onePhoto];
+                    
+                    NSLog(@"photo is %@",photo);
+                   }
+                }
+            }
+            
+        }
+        else{
+            NSLog(@"查询老路径照片失败");
+        }
+        sqlite3_finalize(statement);
+    }
+    else {
+        NSLog(@"数据库打开失败");
+        
+    }
+    sqlite3_close(dataBase);
+    return photo;
+}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -2635,7 +2751,11 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
     if (![photo isEqualToString:@""]) {
         NSArray *images = [photo componentsSeparatedByString:@";"];
         for (int i = 0; i < [images count]; i++) {
-            NSString *fullPath = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
+            
+            NSURL *storeURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.com.sheepcao.DaysInLine"];
+            NSString *destPath = [storeURL path];
+            
+            NSString *fullPath = [destPath
                                   stringByAppendingPathComponent:[images objectAtIndex:i]];
             UIImage *savedImage = [[UIImage alloc] initWithContentsOfFile:fullPath];
            // UIButton *imageView = (UIButton*)[my_modifyViewController.view viewWithTag:IMAGEVIEW_TAG_BASE+i];
@@ -2840,7 +2960,7 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
             NSLog(@"~~~~~~~~~%ld~~~~~~lll",(long)tableRows);
             break;
         case 5:
-            tableRows = 3;
+            tableRows = 4;
             break;
         case 6:
             tableRows = 3;
@@ -3027,6 +3147,7 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
             cell = cell_5;
             
             
+            
             break;
         }
         case 5:
@@ -3049,7 +3170,7 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
             }
             
             cell = cell_6;
-            
+
             break;
 
         }
@@ -3085,6 +3206,16 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
     }
 
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (tableView.tag == 5 && [[UIScreen mainScreen] bounds].size.height < 568.0) {
+        return 34;
+    }else
+    {
+        return 40;
+    }
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -3355,8 +3486,12 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
             my_selectEvent.imageName = photo;
             if (![photo isEqualToString:@""]) {
                 NSArray *images = [photo componentsSeparatedByString:@";"];
+                
+                NSURL *storeURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.com.sheepcao.DaysInLine"];
+                NSString *destPath = [storeURL path];
+                
                 for (int i = 0; i < [images count]; i++) {
-                    NSString *fullPath = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
+                    NSString *fullPath = [destPath
                                           stringByAppendingPathComponent:[images objectAtIndex:i]];
                     UIImage *savedImage = [[UIImage alloc] initWithContentsOfFile:fullPath];
                    // UIImageView *imageView = (UIImageView*)[my_selectEvent.view viewWithTag:IMAGEVIEW_TAG_BASE+i];
@@ -3565,8 +3700,12 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
             my_collectEvent.imageName = photo;
             if (![photo isEqualToString:@""]) {
                 NSArray *images = [photo componentsSeparatedByString:@";"];
+                
+                NSURL *storeURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.com.sheepcao.DaysInLine"];
+                NSString *destPath = [storeURL path];
+
                 for (int i = 0; i < [images count]; i++) {
-                    NSString *fullPath = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
+                    NSString *fullPath = [destPath
                                           stringByAppendingPathComponent:[images objectAtIndex:i]];
                     UIImage *savedImage = [[UIImage alloc] initWithContentsOfFile:fullPath];
                    // UIImageView *imageView = (UIImageView*)[my_collectEvent.view viewWithTag:IMAGEVIEW_TAG_BASE+i];
@@ -3762,8 +3901,13 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
             my_selectEvent.imageName = photo;
             if (![photo isEqualToString:@""]) {
                 NSArray *images = [photo componentsSeparatedByString:@";"];
+                
+                NSURL *storeURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.com.sheepcao.DaysInLine"];
+                NSString *destPath = [storeURL path];
+
+                
                 for (int i = 0; i < [images count]; i++) {
-                    NSString *fullPath = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
+                    NSString *fullPath = [destPath
                                           stringByAppendingPathComponent:[images objectAtIndex:i]];
                     UIImage *savedImage = [[UIImage alloc] initWithContentsOfFile:fullPath];
                    // UIImageView *imageView = (UIImageView*)[my_selectEvent.view viewWithTag:IMAGEVIEW_TAG_BASE+i];
@@ -3805,6 +3949,16 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
            case 5:
         {
             if ( (int)row1 == 0){
+              
+                backupViewController *backupVC = [[backupViewController alloc] initWithNibName:@"backupViewController" bundle:nil];
+
+                
+                backupVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+                [self presentViewController:backupVC animated:YES completion:Nil ];
+                
+            }
+            
+            if ( (int)row1 == 1){
                 self.my_buttonTranslate = [[buttonTranslate alloc]initWithFrame:CGRectMake(self.view.frame.origin.x+80,0, self.view.frame.size.width-85, self.view.frame.size.height )];
                 
                // [self.my_buttonTranslate.returnBtn addTarget:self action:@selector(returnBtnTapped) forControlEvents:UIControlEventTouchUpInside];
@@ -3817,7 +3971,7 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
                 
             }
             
-            if ( (int)row1 == 1){
+            if ( (int)row1 == 2){
                 NSString *lang;
                 
                 [MobClick event:@"allAPP"];
@@ -3839,7 +3993,7 @@ int inwhichButton;//0=mainView,1=today,2=select,3=collect,4=analyse,5=setting.
             
 
         
-        if ( (int)row1 == 2){
+        if ( (int)row1 == 3){
             self.my_contractView = [[contractView alloc]initWithFrame:CGRectMake(self.view.frame.origin.x+80,0, self.view.frame.size.width-85, self.view.frame.size.height )];
             self.my_contractView.contractTable.delegate =self;
             self.my_contractView.contractTable.dataSource = self;

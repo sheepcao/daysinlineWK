@@ -274,7 +274,38 @@ CFBundleDisplayName="DaysInLine";
 "全部事件" = "All Events";
 "%@ 到 %@" = "%@ To %@";
 
-"升级通告" = "Update";
-"广告烦人？历历在目已推出专业版，欢迎前往下载。" = "Download DaysInLine Pro. to get rid of ADs.";
+"升级通告" = "Notice";
+"去除广告，开启备份，欢迎下载历历在目专业版。" = "Download DaysInLine Pro. to get rid of ADs. and unlock data backup.";
+
+"免费版仅支持一次备份试用,请下载专业版开放备份功能" = "Free trial for one time, Pro. version for ever!";
+"去下载" = "Get it Now";
+
 "暂不" = "Not now";
 "前往下载" = "Download";
+"云备份" = "Backup";
+
+
+
+"错误" = "Error";
+"您输入的用户名或密码有误，请重新输入" = "Incorrect username or password.";
+"登录失败，请重试" = "Login Failed, please try again";
+"尚未备份 " = "No Backup";
+"您输入的用户名已存在，换一个吧" = "Username existed.";
+"注册失败，请重试" = "Register Failed, please try again";
+"前往注册" = "Register";
+"前往登录" = "Login";
+"两次输入密码不一致!" = "Confirm password failed";
+"用户名只接受汉字、字母和数字" = "Only accept characters and numbers";
+"您的用户名太长了..." = "Username length exceeded";
+
+
+"登录成功" = "Success";
+"%@\n备份失败，请重试" = "%@\nBackup Failed, please try again.";
+"成功备份" = "Backup Success";
+"同步失败，请稍后重试" = "Download Failed, please try again.";
+"成功同步到本机" = "Download success";
+"注意" = "Notice";
+"即将以当前数据替换之前的备份数据" = "Replace the prior backup with your current data ?";
+"确认" = "Yes";
+"您还未进行过备份，无法同步到本地。" = "You don't have a bacukup available.";
+"云端备份数据将同步至本地，确认继续?" = "Your data will be replaced by your last backup,Continue?";

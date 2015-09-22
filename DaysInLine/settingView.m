@@ -15,20 +15,7 @@
     self = [super initWithFrame:frame];
     if (self) {
         // Initialization code
-   /*     UIImageView *rightBackground = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
         
-        rightBackground.image = [UIImage imageNamed:@"rightBackground.png"];
-        
-        [self addSubview:rightBackground];
-        [self sendSubviewToBack:rightBackground];
-        
-  */
-        
-      //  UIImageView *title = [[UIImageView alloc] initWithFrame:CGRectMake(self.frame.size.width/2-30, self.frame.origin.y+25, 37 , 20) ];
-        //tips.text = @"请选择想要分析的时间段：";
-        // tips.backgroundColor = [UIColor clearColor];
-        
-       // title.image = [UIImage imageNamed:@"设置汉字.png"];
         UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(self.frame.size.width/2-35, self.frame.origin.y+30, 80 , 20) ];
         title.backgroundColor = [UIColor clearColor];
         title.text = NSLocalizedString(@"设 置",nil);
@@ -44,13 +31,13 @@
         int y = 0;
         if (screenBounds.size.height == 568) {
             
-            self.settingTable = [[UITableView alloc] initWithFrame:CGRectMake(2,350,self.frame.size.width-10, 110) style:UITableViewStylePlain];
+            self.settingTable = [[UITableView alloc] initWithFrame:CGRectMake(2,350,self.frame.size.width-10, 160) style:UITableViewStylePlain];
         
         }else
         {
             y-=30;
             
-            self.settingTable = [[UITableView alloc] initWithFrame:CGRectMake(2,290,self.frame.size.width-10, 110) style:UITableViewStylePlain];
+            self.settingTable = [[UITableView alloc] initWithFrame:CGRectMake(2,290,self.frame.size.width-10, 136) style:UITableViewStylePlain];
         }
         
 

@@ -718,11 +718,17 @@ int recorderID;
 #pragma mark - 保存图片至沙盒 和 系统相册
 - (void) saveImage:(UIImage *)currentImage withName:(NSString *)imageName
 {
-    NSData *imageData = UIImageJPEGRepresentation(currentImage, 0.5);
+    NSData *imageData = UIImageJPEGRepresentation(currentImage, 0.1);
+    
+    NSURL *storeURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.com.sheepcao.DaysInLine"];
+    NSString *destPath = [storeURL path];
+
     
     // 获取沙盒目录
-    NSString *fullPath = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
+    NSString *fullPath = [destPath
                           stringByAppendingPathComponent:imageName];
+    
+    NSLog(@"image path___:%@",fullPath);
     
     // 将图片写入文件
     [imageData writeToFile:fullPath atomically:NO];
@@ -746,9 +752,13 @@ int recorderID;
     
     [self saveImage:image withName: name];
     
-    NSString *fullPath = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:name];
+    NSURL *storeURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.com.sheepcao.DaysInLine"];
+    NSString *destPath = [storeURL path];
+
+    NSString *fullPath = [destPath stringByAppendingPathComponent:name];
     
     UIImage *savedImage = [[UIImage alloc] initWithContentsOfFile:fullPath];
+    
     int index = 0;
     if ([self.imageName isEqualToString:@""] || self.imageName == nil) {
         self.imageName = name;
@@ -756,13 +766,7 @@ int recorderID;
         self.imageName = [NSString stringWithFormat:@"%@;%@", self.imageName, name];
         index = (int)[[self.imageName componentsSeparatedByString:@";"] count] - 1;
     }
-   // [[self.imageView objectAtIndex:index] setImage:savedImage];
-    //button for every imageView
-    
-    //[[self.imageViewButton objectAtIndex:index] setFrame:[[self.imageView objectAtIndex:index] frame]];
-   // [self.view addSubview:[self.imageViewButton objectAtIndex:index]];
-   // [[self.imageViewButton objectAtIndex:index] setTag:index+IMAGEBUTTON_TAG_BASE];
-  //  //NSLog(@"button tag is :%d",((UIButton *)self.imageViewButton[index]).tag );
+  
     [[self.imageViewButton objectAtIndex:index] setImage:savedImage forState:UIControlStateNormal];
     [[self.imageViewButton objectAtIndex:index] addTarget:self action:@selector(pictureTapped:) forControlEvents:UIControlEventTouchUpInside];
 
@@ -3116,9 +3120,10 @@ int recorderID;
 {
 
     NSFileManager *fileManager =[NSFileManager defaultManager];
-    
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *voicePath =[[paths objectAtIndex:0] stringByAppendingPathComponent:[NSString stringWithFormat:@"message%d.caf",recorderID]];
+    NSURL *storeURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.com.sheepcao.DaysInLine"];
+    NSString *voicePath = [[storeURL path] stringByAppendingPathComponent:[NSString stringWithFormat:@"message%d.caf",recorderID]];
+//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+//    NSString *voicePath =[[paths objectAtIndex:0] stringByAppendingPathComponent:[NSString stringWithFormat:@"message%d.caf",recorderID]];
     
     if (![self.recorder isRecording]) {
         
@@ -3211,8 +3216,11 @@ int recorderID;
 {
     NSFileManager *fileManager =[NSFileManager defaultManager];
     
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *voicePath =[[paths objectAtIndex:0] stringByAppendingPathComponent:[NSString stringWithFormat:@"message%d.caf",recorderID]];
+    NSURL *storeURL = [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:@"group.com.sheepcao.DaysInLine"];
+    NSString *voicePath = [[storeURL path] stringByAppendingPathComponent:[NSString stringWithFormat:@"message%d.caf",recorderID]];
+    
+//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+//    NSString *voicePath =[[paths objectAtIndex:0] stringByAppendingPathComponent:[NSString stringWithFormat:@"message%d.caf",recorderID]];
     
     NSError *error;
     [fileManager removeItemAtPath:voicePath error:&error];
